@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>She'rlar - EduPlay</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+            <nav class="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <i class="fas fa-gamepad"></i>
+                <span>EduPlay</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="main.html"><i class="fas fa-star"></i> <span data-i18n="start_page">Welcome</span></a></li>
+                <li class="nav-section"><span data-i18n="games">Games</span></li>
+                <li><a href="index.html"><i class="fas fa-gamepad"></i> <span data-i18n="games">Games</span></a></li>
+                <li><a href="certificate.html"><i class="fas fa-certificate"></i> <span data-i18n="get_certificate">Get Certificate</span></a></li>
+                <li class="nav-section"><span data-i18n="login">Login</span></li>
+                <li><a href="login.html"><i class="fas fa-sign-in-alt"></i> <span data-i18n="login">Login</span></a></li>
+                <li class="nav-section"><span data-i18n="more">More</span></li>
+                <li><a href="poems.html" class="active"><i class="fas fa-feather-alt"></i> <span data-i18n="poems">Poems</span></a></li>
+                <li class="nav-section"><span data-i18n="settings">Settings</span></li>
+                <li><a href="settings.html"><i class="fas fa-cog"></i> <span data-i18n="settings">Settings</span></a></li>
+                <li><a href="help.html"><i class="fas fa-question-circle"></i> <span data-i18n="help">Help</span></a></li>
+                <li><a href="videos.html"><i class="fas fa-bookmark"></i> <span data-i18n="videos">Saved Videos</span></a></li>
+            </ul>
+        </div>
+        <div class="sidebar-footer">
+            <div class="language-switcher">
+                <select id="lang-select"
+                    style="width: 100%; padding: 0.5rem; background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.1); color: white; border-radius: 0.5rem;">
+                    <option value="uz">O'zbekcha</option>
+                    <option value="en" selected>English</option>
+                    <option value="ru">Русский</option>
+                </select>
+            </div>
+        </div>
+    </nav>
+    <main class="main-content">
+        <header>
+            <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+            <div class="page-title">
+                <h1 data-i18n="poems">Poems</h1>
+            </div>
+        </header>
+        <section class="content-section" style="max-width: 1200px; margin: 0 auto; padding-bottom: 5rem;">
+            <div style="display: flex; gap: 2rem; flex-wrap: wrap; justify-content: center; align-items: flex-start;">
+
+                <!-- Poem A -->
+                <div class="card"
+                    style="flex: 1; min-width: 350px; max-width: 550px; padding: 2.5rem; position: relative;">
+                    <div style="text-align: center; margin-bottom: 2rem;">
+                        <div
+                            style="font-size: 3.5rem; color: var(--primary-color); font-weight: bold; margin-bottom: 1rem; font-family: 'Georgia', serif; display: block;">
+                            A</div>
+                        <h2 style="color: var(--primary-color); font-size: 1.6rem; margin-bottom: 0.5rem;"
+                            data-i18n="poem_alpha_a_title">A harfi uchun she'r</h2>
+                        <p style="color: var(--text-muted); font-style: italic;" data-i18n="poem_alpha_a_subtitle">
+                            Alifbo she'rlari</p>
+                    </div>
+
+                    <div style="font-size: 1.05rem; line-height: 1.8; color: var(--text-color); text-align: center; font-family: 'Georgia', serif;"
+                        data-i18n="poem_alpha_a_body">
+                        Ahil asalarilar<br>Azonlab tushar ishga<br>Atrof dala, bogʻlardan<br>Asal yigʻishar
+                        qishga<br>Ayiq boʻlsa, meshqorin<br>Asallarni yer, borin.<br>Arilar xafa gʻoyat,<br>Axir' bormi
+                        adolat?!
+                    </div>
+
+                    <div
+                        style="margin-top: 2.5rem; text-align: center; border-top: 1px solid var(--glass-border); padding-top: 1.5rem;">
+                        <button class="btn btn-green like-btn" style="max-width: 200px;">
+                            <i class="far fa-thumbs-up"></i> <span data-i18n="liked_question">Yoqdimi?</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- Poem B -->
+                <div class="card"
+                    style="flex: 1; min-width: 350px; max-width: 550px; padding: 2.5rem; position: relative;">
+                    <div style="text-align: center; margin-bottom: 2rem;">
+                        <div
+                            style="font-size: 3.5rem; color: var(--primary-color); font-weight: bold; margin-bottom: 1rem; font-family: 'Georgia', serif; display: block;">
+                            B</div>
+                        <h2 style="color: var(--primary-color); font-size: 1.6rem; margin-bottom: 0.5rem;"
+                            data-i18n="poem_alpha_b_title">B harfi uchun she'r</h2>
+                        <p style="color: var(--text-muted); font-style: italic;" data-i18n="poem_alpha_b_subtitle">
+                            Alifbo she'rlari</p>
+                    </div>
+
+                    <div style="font-size: 1.05rem; line-height: 1.8; color: var(--text-color); text-align: center; font-family: 'Georgia', serif;"
+                        data-i18n="poem_alpha_b_body">
+                        Baliq boyvuchcha, desam,<br>Bekor gap, dema hecham.<br>Boq oʻzing, ana oʻrtoq,<br>Badani xoʻp
+                        yaltiroq.<br>Boshdan-oyoq tanga u,<br>Bas, boyvuchcha yanga u.
+                    </div>
+
+                    <div
+                        style="margin-top: 2.5rem; text-align: center; border-top: 1px solid var(--glass-border); padding-top: 1.5rem;">
+                        <button class="btn btn-green like-btn" style="max-width: 200px;">
+                            <i class="far fa-thumbs-up"></i> <span data-i18n="liked_question">Yoqdimi?</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- Poem D -->
+                <div class="card"
+                    style="flex: 1; min-width: 350px; max-width: 550px; padding: 2.5rem; position: relative;">
+                    <div style="text-align: center; margin-bottom: 2rem;">
+                        <div
+                            style="font-size: 3.5rem; color: var(--primary-color); font-weight: bold; margin-bottom: 1rem; font-family: 'Georgia', serif; display: block;">
+                            D</div>
+                        <h2 style="color: var(--primary-color); font-size: 1.6rem; margin-bottom: 0.5rem;"
+                            data-i18n="poem_alpha_d_title">D harfi uchun she'r</h2>
+                        <p style="color: var(--text-muted); font-style: italic;" data-i18n="poem_alpha_d_subtitle">
+                            Alifbo she'rlari</p>
+                    </div>
+
+                    <div style="font-size: 1.05rem; line-height: 1.8; color: var(--text-color); text-align: center; font-family: 'Georgia', serif;"
+                        data-i18n="poem_alpha_d_body">
+                        Delfin mohir dengizchi,<br>Dono, aqlli biram<br>Dengizda choʻksa birov<br>Darrov beradi yordam.
+                    </div>
+
+                    <div
+                        style="margin-top: 2.5rem; text-align: center; border-top: 1px solid var(--glass-border); padding-top: 1.5rem;">
+                        <button class="btn btn-green like-btn" style="max-width: 200px;">
+                            <i class="far fa-thumbs-up"></i> <span data-i18n="liked_question">Yoqdimi?</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- Poem E -->
+                <div class="card"
+                    style="flex: 1; min-width: 350px; max-width: 550px; padding: 2.5rem; position: relative;">
+                    <div style="text-align: center; margin-bottom: 2rem;">
+                        <div
+                            style="font-size: 3.5rem; color: var(--primary-color); font-weight: bold; margin-bottom: 1rem; font-family: 'Georgia', serif; display: block;">
+                            E</div>
+                        <h2 style="color: var(--primary-color); font-size: 1.6rem; margin-bottom: 0.5rem;"
+                            data-i18n="poem_alpha_e_title">E harfi uchun she'r</h2>
+                        <p style="color: var(--text-muted); font-style: italic;" data-i18n="poem_alpha_e_subtitle">
+                            Alifbo she'rlari</p>
+                    </div>
+
+                    <div style="font-size: 1.05rem; line-height: 1.8; color: var(--text-color); text-align: center; font-family: 'Georgia', serif;"
+                        data-i18n="poem_alpha_e_body">
+                        Etikdoʻz Echki eski<br>Etiklarni rostladi.<br>Eplab, qolipga tortib,<br>Eshakvoyga mosladi.
+                    </div>
+
+                    <div
+                        style="margin-top: 2.5rem; text-align: center; border-top: 1px solid var(--glass-border); padding-top: 1.5rem;">
+                        <button class="btn btn-green like-btn" style="max-width: 200px;">
+                            <i class="far fa-thumbs-up"></i> <span data-i18n="liked_question">Yoqdimi?</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- Poem F -->
+                <div class="card"
+                    style="flex: 1; min-width: 350px; max-width: 550px; padding: 2.5rem; position: relative;">
+                    <div style="text-align: center; margin-bottom: 2rem;">
+                        <div
+                            style="font-size: 3.5rem; color: var(--primary-color); font-weight: bold; margin-bottom: 1rem; font-family: 'Georgia', serif; display: block;">
+                            F</div>
+                        <h2 style="color: var(--primary-color); font-size: 1.6rem; margin-bottom: 0.5rem;"
+                            data-i18n="poem_alpha_f_title">F harfi uchun she'r</h2>
+                        <p style="color: var(--text-muted); font-style: italic;" data-i18n="poem_alpha_f_subtitle">
+                            Alifbo she'rlari</p>
+                    </div>
+
+                    <div style="font-size: 1.05rem; line-height: 1.8; color: var(--text-color); text-align: center; font-family: 'Georgia', serif;"
+                        data-i18n="poem_alpha_f_body">
+                        Farrosh Fill xola, qarang,<br>Tozalabdi har yoqni.<br>Topmaysiz hech yerda chang,<br>Artib
+                        kiring oyoqni.<br>Fayzli, fusunkor boʻlib,<br>Yashnab turar hamma yoq.<br>Farroshlar
+                        mehnatini<br>Qadrlang siz ey oʻrtoq!
+                    </div>
+
+                    <div
+                        style="margin-top: 2.5rem; text-align: center; border-top: 1px solid var(--glass-border); padding-top: 1.5rem;">
+                        <button class="btn btn-green like-btn" style="max-width: 200px;">
+                            <i class="far fa-thumbs-up"></i> <span data-i18n="liked_question">Yoqdimi?</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- Poem G -->
+                <div class="card"
+                    style="flex: 1; min-width: 350px; max-width: 550px; padding: 2.5rem; position: relative;">
+                    <div style="text-align: center; margin-bottom: 2rem;">
+                        <div
+                            style="font-size: 3.5rem; color: var(--primary-color); font-weight: bold; margin-bottom: 1rem; font-family: 'Georgia', serif; display: block;">
+                            G</div>
+                        <h2 style="color: var(--primary-color); font-size: 1.6rem; margin-bottom: 0.5rem;"
+                            data-i18n="poem_alpha_g_title">G harfi uchun she'r</h2>
+                        <p style="color: var(--text-muted); font-style: italic;" data-i18n="poem_alpha_g_subtitle">
+                            Alifbo she'rlari</p>
+                    </div>
+
+                    <div style="font-size: 1.05rem; line-height: 1.8; color: var(--text-color); text-align: center; font-family: 'Georgia', serif;"
+                        data-i18n="poem_alpha_g_body">
+                        Gimnastikachi--<br>Gavdali, durkun<br>Gardani yoʻgʻon<br>Gorilla maymun.<br>Gap yoʻq
+                        mashqiga,<br>Bajarar chaqqon,<br>Olqishlar olib,<br>Hammaga yoqqan.
+                    </div>
+
+                    <div
+                        style="margin-top: 2.5rem; text-align: center; border-top: 1px solid var(--glass-border); padding-top: 1.5rem;">
+                        <button class="btn btn-green like-btn" style="max-width: 200px;">
+                            <i class="far fa-thumbs-up"></i> <span data-i18n="liked_question">Yoqdimi?</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- Poem H -->
+                <div class="card"
+                    style="flex: 1; min-width: 350px; max-width: 550px; padding: 2.5rem; position: relative;">
+                    <div style="text-align: center; margin-bottom: 2rem;">
+                        <div
+                            style="font-size: 3.5rem; color: var(--primary-color); font-weight: bold; margin-bottom: 1rem; font-family: 'Georgia', serif; display: block;">
+                            H</div>
+                        <h2 style="color: var(--primary-color); font-size: 1.6rem; margin-bottom: 0.5rem;"
+                            data-i18n="poem_alpha_h_title">H harfi uchun she'r</h2>
+                        <p style="color: var(--text-muted); font-style: italic;" data-i18n="poem_alpha_h_subtitle">
+                            Alifbo she'rlari</p>
+                    </div>
+
+                    <div style="font-size: 1.05rem; line-height: 1.8; color: var(--text-color); text-align: center; font-family: 'Georgia', serif;"
+                        data-i18n="poem_alpha_h_body">
+                        Hakka harbiy xizmatda,<br>Himoyachi zoʻr posbon!<br>Havodan oʻtmas pashsha,<br>Hatlolmas yerdan
+                        sichqon.
+                    </div>
+
+                    <div
+                        style="margin-top: 2.5rem; text-align: center; border-top: 1px solid var(--glass-border); padding-top: 1.5rem;">
+                        <button class="btn btn-green like-btn" style="max-width: 200px;">
+                            <i class="far fa-thumbs-up"></i> <span data-i18n="liked_question">Yoqdimi?</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- Poem I -->
+                <div class="card"
+                    style="flex: 1; min-width: 350px; max-width: 550px; padding: 2.5rem; position: relative;">
+                    <div style="text-align: center; margin-bottom: 2rem;">
+                        <div
+                            style="font-size: 3.5rem; color: var(--primary-color); font-weight: bold; margin-bottom: 1rem; font-family: 'Georgia', serif; display: block;">
+                            I</div>
+                        <h2 style="color: var(--primary-color); font-size: 1.6rem; margin-bottom: 0.5rem;"
+                            data-i18n="poem_alpha_i_title">I harfi uchun she'r</h2>
+                        <p style="color: var(--text-muted); font-style: italic;" data-i18n="poem_alpha_i_subtitle">
+                            Alifbo she'rlari</p>
+                    </div>
+
+                    <div style="font-size: 1.05rem; line-height: 1.8; color: var(--text-color); text-align: center; font-family: 'Georgia', serif;"
+                        data-i18n="poem_alpha_i_body">
+                        It ishonchli izquvar,<br>Ishini yaxshi bilar.<br>Ishkal qilsa kim-birov,<br>Izini olib
+                        darrov,<br>Izlab-izlab topadi,<br>Irillaydi qopadi!
+                    </div>
+
+                    <div
+                        style="margin-top: 2.5rem; text-align: center; border-top: 1px solid var(--glass-border); padding-top: 1.5rem;">
+                        <button class="btn btn-green like-btn" style="max-width: 200px;">
+                            <i class="far fa-thumbs-up"></i> <span data-i18n="liked_question">Yoqdimi?</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- Poem J -->
+                <div class="card"
+                    style="flex: 1; min-width: 350px; max-width: 550px; padding: 2.5rem; position: relative;">
+                    <div style="text-align: center; margin-bottom: 2rem;">
+                        <div
+                            style="font-size: 3.5rem; color: var(--primary-color); font-weight: bold; margin-bottom: 1rem; font-family: 'Georgia', serif; display: block;">
+                            J</div>
+                        <h2 style="color: var(--primary-color); font-size: 1.6rem; margin-bottom: 0.5rem;"
+                            data-i18n="poem_alpha_j_title">J harfi uchun she'r</h2>
+                        <p style="color: var(--text-muted); font-style: italic;" data-i18n="poem_alpha_j_subtitle">
+                            Alifbo she'rlari</p>
+                    </div>
+
+                    <div style="font-size: 1.05rem; line-height: 1.8; color: var(--text-color); text-align: center; font-family: 'Georgia', serif;"
+                        data-i18n="poem_alpha_j_body">
+                        Jarroh Jayra<br>Ja zoʻr-da.<br>Kasallarga<br>Gʻamxoʻrda<br>Sekin tiqar ninasin.<br>Ishonmagan
+                        sinasin.
+                    </div>
+
+                    <div
+                        style="margin-top: 2.5rem; text-align: center; border-top: 1px solid var(--glass-border); padding-top: 1.5rem;">
+                        <button class="btn btn-green like-btn" style="max-width: 200px;">
+                            <i class="far fa-thumbs-up"></i> <span data-i18n="liked_question">Yoqdimi?</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- Poem K -->
+                <div class="card"
+                    style="flex: 1; min-width: 350px; max-width: 550px; padding: 2.5rem; position: relative;">
+                    <div style="text-align: center; margin-bottom: 2rem;">
+                        <div
+                            style="font-size: 3.5rem; color: var(--primary-color); font-weight: bold; margin-bottom: 1rem; font-family: 'Georgia', serif; display: block;">
+                            K</div>
+                        <h2 style="color: var(--primary-color); font-size: 1.6rem; margin-bottom: 0.5rem;"
+                            data-i18n="poem_alpha_k_title">K harfi uchun she'r</h2>
+                        <p style="color: var(--text-muted); font-style: italic;" data-i18n="poem_alpha_k_subtitle">
+                            Alifbo she'rlari</p>
+                    </div>
+
+                    <div style="font-size: 1.05rem; line-height: 1.8; color: var(--text-color); text-align: center; font-family: 'Georgia', serif;"
+                        data-i18n="poem_alpha_k_body">
+                        Kalamushvoy kemirar,<br>Kundan-kunga semirar.<br>Boshqa kasb kori yoʻq,<br>Andishasi ori yo'q.
+                    </div>
+
+                    <div
+                        style="margin-top: 2.5rem; text-align: center; border-top: 1px solid var(--glass-border); padding-top: 1.5rem;">
+                        <button class="btn btn-green like-btn" style="max-width: 200px;">
+                            <i class="far fa-thumbs-up"></i> <span data-i18n="liked_question">Yoqdimi?</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- Poem L -->
+                <div class="card"
+                    style="flex: 1; min-width: 350px; max-width: 550px; padding: 2.5rem; position: relative;">
+                    <div style="text-align: center; margin-bottom: 2rem;">
+                        <div
+                            style="font-size: 3.5rem; color: var(--primary-color); font-weight: bold; margin-bottom: 1rem; font-family: 'Georgia', serif; display: block;">
+                            L</div>
+                        <h2 style="color: var(--primary-color); font-size: 1.6rem; margin-bottom: 0.5rem;"
+                            data-i18n="poem_alpha_l_title">L harfi uchun she'r</h2>
+                        <p style="color: var(--text-muted); font-style: italic;" data-i18n="poem_alpha_l_subtitle">
+                            Alifbo she'rlari</p>
+                    </div>
+
+                    <div style="font-size: 1.05rem; line-height: 1.8; color: var(--text-color); text-align: center; font-family: 'Georgia', serif;"
+                        data-i18n="poem_alpha_l_body">
+                        Lofchi laylak lof urar,<br>Laqma, laqqa baqaga.<br>Soʻng cho'qib shartta yutar,<br>Dars bu
+                        bola-chaqaga.
+                    </div>
+
+                    <div
+                        style="margin-top: 2.5rem; text-align: center; border-top: 1px solid var(--glass-border); padding-top: 1.5rem;">
+                        <button class="btn btn-green like-btn" style="max-width: 200px;">
+                            <i class="far fa-thumbs-up"></i> <span data-i18n="liked_question">Yoqdimi?</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- Poem M -->
+                <div class="card"
+                    style="flex: 1; min-width: 350px; max-width: 550px; padding: 2.5rem; position: relative;">
+                    <div style="text-align: center; margin-bottom: 2rem;">
+                        <div
+                            style="font-size: 3.5rem; color: var(--primary-color); font-weight: bold; margin-bottom: 1rem; font-family: 'Georgia', serif; display: block;">
+                            M</div>
+                        <h2 style="color: var(--primary-color); font-size: 1.6rem; margin-bottom: 0.5rem;"
+                            data-i18n="poem_alpha_m_title">M harfi uchun she'r</h2>
+                        <p style="color: var(--text-muted); font-style: italic;" data-i18n="poem_alpha_m_subtitle">
+                            Alifbo she'rlari</p>
+                    </div>
+
+                    <div style="font-size: 1.05rem; line-height: 1.8; color: var(--text-color); text-align: center; font-family: 'Georgia', serif;"
+                        data-i18n="poem_alpha_m_body">
+                        Maymun bilan Mosh mitti<br>Masxaraboz oʻyinchi.<br>Maydonda mashq qilmoqda,<br>Mana, siz ham
+                        koʻring-chi:<br>Maymunni mashinaday<br>Minib, haydamoqchi Mosh.<br>"Mashina"-chi, miq
+                        etmas,<br>Tormozda-da, na iloj...
+                    </div>
+
+                    <div
+                        style="margin-top: 2.5rem; text-align: center; border-top: 1px solid var(--glass-border); padding-top: 1.5rem;">
+                        <button class="btn btn-green like-btn" style="max-width: 200px;">
+                            <i class="far fa-thumbs-up"></i> <span data-i18n="liked_question">Yoqdimi?</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- Poem N -->
+                <div class="card"
+                    style="flex: 1; min-width: 350px; max-width: 550px; padding: 2.5rem; position: relative;">
+                    <div style="text-align: center; margin-bottom: 2rem;">
+                        <div
+                            style="font-size: 3.5rem; color: var(--primary-color); font-weight: bold; margin-bottom: 1rem; font-family: 'Georgia', serif; display: block;">
+                            N</div>
+                        <h2 style="color: var(--primary-color); font-size: 1.6rem; margin-bottom: 0.5rem;"
+                            data-i18n="poem_alpha_n_title">N harfi uchun she'r</h2>
+                        <p style="color: var(--text-muted); font-style: italic;" data-i18n="poem_alpha_n_subtitle">
+                            Alifbo she'rlari</p>
+                    </div>
+
+                    <div style="font-size: 1.05rem; line-height: 1.8; color: var(--text-color); text-align: center; font-family: 'Georgia', serif;"
+                        data-i18n="poem_alpha_n_body">
+                        Ninachixon raqqosa<br>Nozik, navnihol rosa.<br>Nazar soling, naqadar<br>Nafis raqsga tushar.
+                    </div>
+
+                    <div
+                        style="margin-top: 2.5rem; text-align: center; border-top: 1px solid var(--glass-border); padding-top: 1.5rem;">
+                        <button class="btn btn-green like-btn" style="max-width: 200px;">
+                            <i class="far fa-thumbs-up"></i> <span data-i18n="liked_question">Yoqdimi?</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- Poem O -->
+                <div class="card"
+                    style="flex: 1; min-width: 350px; max-width: 550px; padding: 2.5rem; position: relative;">
+                    <div style="text-align: center; margin-bottom: 2rem;">
+                        <div
+                            style="font-size: 3.5rem; color: var(--primary-color); font-weight: bold; margin-bottom: 1rem; font-family: 'Georgia', serif; display: block;">
+                            O</div>
+                        <h2 style="color: var(--primary-color); font-size: 1.6rem; margin-bottom: 0.5rem;"
+                            data-i18n="poem_alpha_o_title">O harfi uchun she'r</h2>
+                        <p style="color: var(--text-muted); font-style: italic;" data-i18n="poem_alpha_o_subtitle">
+                            Alifbo she'rlari</p>
+                    </div>
+
+                    <div style="font-size: 1.05rem; line-height: 1.8; color: var(--text-color); text-align: center; font-family: 'Georgia', serif;"
+                        data-i18n="poem_alpha_o_body">
+                        Ot kasbi -ishchi,<br>Omborchi, yukchi,<br>Ortib don-dunni,<br>Oppoq tuz, unni,<br>Olib yeladi,
+                        olib keladi.
+                    </div>
+
+                    <div
+                        style="margin-top: 2.5rem; text-align: center; border-top: 1px solid var(--glass-border); padding-top: 1.5rem;">
+                        <button class="btn btn-green like-btn" style="max-width: 200px;">
+                            <i class="far fa-thumbs-up"></i> <span data-i18n="liked_question">Yoqdimi?</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- Poem P -->
+                <div class="card"
+                    style="flex: 1; min-width: 350px; max-width: 550px; padding: 2.5rem; position: relative;">
+                    <div style="text-align: center; margin-bottom: 2rem;">
+                        <div
+                            style="font-size: 3.5rem; color: var(--primary-color); font-weight: bold; margin-bottom: 1rem; font-family: 'Georgia', serif; display: block;">
+                            P</div>
+                        <h2 style="color: var(--primary-color); font-size: 1.6rem; margin-bottom: 0.5rem;"
+                            data-i18n="poem_alpha_p_title">P harfi uchun she'r</h2>
+                        <p style="color: var(--text-muted); font-style: italic;" data-i18n="poem_alpha_p_subtitle">
+                            Alifbo she'rlari</p>
+                    </div>
+
+                    <div style="font-size: 1.05rem; line-height: 1.8; color: var(--text-color); text-align: center; font-family: 'Georgia', serif;"
+                        data-i18n="poem_alpha_p_body">
+                        Pingvin xola pazanda,<br>Piyoz sabzi qozonda.<br>Peshin palov pishsin deb<br>Ish boshlagan
+                        azonda
+                    </div>
+
+                    <div
+                        style="margin-top: 2.5rem; text-align: center; border-top: 1px solid var(--glass-border); padding-top: 1.5rem;">
+                        <button class="btn btn-green like-btn" style="max-width: 200px;">
+                            <i class="far fa-thumbs-up"></i> <span data-i18n="liked_question">Yoqdimi?</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- Poem Q -->
+                <div class="card"
+                    style="flex: 1; min-width: 350px; max-width: 550px; padding: 2.5rem; position: relative;">
+                    <div style="text-align: center; margin-bottom: 2rem;">
+                        <div
+                            style="font-size: 3.5rem; color: var(--primary-color); font-weight: bold; margin-bottom: 1rem; font-family: 'Georgia', serif; display: block;">
+                            Q</div>
+                        <h2 style="color: var(--primary-color); font-size: 1.6rem; margin-bottom: 0.5rem;"
+                            data-i18n="poem_alpha_q_title">Q harfi uchun she'r</h2>
+                        <p style="color: var(--text-muted); font-style: italic;" data-i18n="poem_alpha_q_subtitle">
+                            Alifbo she'rlari</p>
+                    </div>
+
+                    <div style="font-size: 1.05rem; line-height: 1.8; color: var(--text-color); text-align: center; font-family: 'Georgia', serif;"
+                        data-i18n="poem_alpha_q_body">
+                        Qaldirgʻochga qoyil-a,<br>Qarang, qanday quruvchi.<br>Quribdi loydan uya,<br>Qotiribdi,
+                        koʻring-chi.<br>Qiyin ishmi shuyam deb,<br>Qora qargʻa gap qotar.<br>Oʻzi qurgan in
+                        esa,<br>Shamolda qulab yotar.
+                    </div>
+
+                    <div
+                        style="margin-top: 2.5rem; text-align: center; border-top: 1px solid var(--glass-border); padding-top: 1.5rem;">
+                        <button class="btn btn-green like-btn" style="max-width: 200px;">
+                            <i class="far fa-thumbs-up"></i> <span data-i18n="liked_question">Yoqdimi?</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- Poem R -->
+                <div class="card"
+                    style="flex: 1; min-width: 350px; max-width: 550px; padding: 2.5rem; position: relative;">
+                    <div style="text-align: center; margin-bottom: 2rem;">
+                        <div
+                            style="font-size: 3.5rem; color: var(--primary-color); font-weight: bold; margin-bottom: 1rem; font-family: 'Georgia', serif; display: block;">
+                            R</div>
+                        <h2 style="color: var(--primary-color); font-size: 1.6rem; margin-bottom: 0.5rem;"
+                            data-i18n="poem_alpha_r_title">R harfi uchun she'r</h2>
+                        <p style="color: var(--text-muted); font-style: italic;" data-i18n="poem_alpha_r_subtitle">
+                            Alifbo she'rlari</p>
+                    </div>
+
+                    <div style="font-size: 1.05rem; line-height: 1.8; color: var(--text-color); text-align: center; font-family: 'Georgia', serif;"
+                        data-i18n="poem_alpha_r_body">
+                        Rassom Buzoq<br>Rasm solar.<br>Quyon qoʻrqib<br>Razm solar.<br>Rasmlarning<br>zo'ri-da
+                        u,<br>Rosa katta<br>Boʻrida u!
+                    </div>
+
+                    <div
+                        style="margin-top: 2.5rem; text-align: center; border-top: 1px solid var(--glass-border); padding-top: 1.5rem;">
+                        <button class="btn btn-green like-btn" style="max-width: 200px;">
+                            <i class="far fa-thumbs-up"></i> <span data-i18n="liked_question">Yoqdimi?</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- Poem S -->
+                <div class="card"
+                    style="flex: 1; min-width: 350px; max-width: 550px; padding: 2.5rem; position: relative;">
+                    <div style="text-align: center; margin-bottom: 2rem;">
+                        <div
+                            style="font-size: 3.5rem; color: var(--primary-color); font-weight: bold; margin-bottom: 1rem; font-family: 'Georgia', serif; display: block;">
+                            S</div>
+                        <h2 style="color: var(--primary-color); font-size: 1.6rem; margin-bottom: 0.5rem;"
+                            data-i18n="poem_alpha_s_title">S harfi uchun she'r</h2>
+                        <p style="color: var(--text-muted); font-style: italic;" data-i18n="poem_alpha_s_subtitle">
+                            Alifbo she'rlari</p>
+                    </div>
+
+                    <div style="font-size: 1.05rem; line-height: 1.8; color: var(--text-color); text-align: center; font-family: 'Georgia', serif;"
+                        data-i18n="poem_alpha_s_body">
+                        Sa'vaxon-suxandon,<br>Soʻzlari biyron-biyron.<br>Soling quloq, qanday soz,<br>Sehrli, sohir
+                        ovoz!
+                    </div>
+
+                    <div
+                        style="margin-top: 2.5rem; text-align: center; border-top: 1px solid var(--glass-border); padding-top: 1.5rem;">
+                        <button class="btn btn-green like-btn" style="max-width: 200px;">
+                            <i class="far fa-thumbs-up"></i> <span data-i18n="liked_question">Yoqdimi?</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- Poem T -->
+                <div class="card"
+                    style="flex: 1; min-width: 350px; max-width: 550px; padding: 2.5rem; position: relative;">
+                    <div style="text-align: center; margin-bottom: 2rem;">
+                        <div
+                            style="font-size: 3.5rem; color: var(--primary-color); font-weight: bold; margin-bottom: 1rem; font-family: 'Georgia', serif; display: block;">
+                            T</div>
+                        <h2 style="color: var(--primary-color); font-size: 1.6rem; margin-bottom: 0.5rem;"
+                            data-i18n="poem_alpha_t_title">T harfi uchun she'r</h2>
+                        <p style="color: var(--text-muted); font-style: italic;" data-i18n="poem_alpha_t_subtitle">
+                            Alifbo she'rlari</p>
+                    </div>
+
+                    <div style="font-size: 1.05rem; line-height: 1.8; color: var(--text-color); text-align: center; font-family: 'Georgia', serif;"
+                        data-i18n="poem_alpha_t_body">
+                        Tipratikan tikuvchi,<br>Tinmay tikar tunu kun.<br>Turli tuman buyurtma<br>Taxlangan tugun
+                        tugun.<br>Tanho tannoz Tovusning<br>Tayyormas buyurtmasi.<br>Timsohning terisini<br>Tesholmadi
+                        ignasi.
+                    </div>
+
+                    <div
+                        style="margin-top: 2.5rem; text-align: center; border-top: 1px solid var(--glass-border); padding-top: 1.5rem;">
+                        <button class="btn btn-green like-btn" style="max-width: 200px;">
+                            <i class="far fa-thumbs-up"></i> <span data-i18n="liked_question">Yoqdimi?</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- Poem U -->
+                <div class="card"
+                    style="flex: 1; min-width: 350px; max-width: 550px; padding: 2.5rem; position: relative;">
+                    <div style="text-align: center; margin-bottom: 2rem;">
+                        <div
+                            style="font-size: 3.5rem; color: var(--primary-color); font-weight: bold; margin-bottom: 1rem; font-family: 'Georgia', serif; display: block;">
+                            U</div>
+                        <h2 style="color: var(--primary-color); font-size: 1.6rem; margin-bottom: 0.5rem;"
+                            data-i18n="poem_alpha_u_title">U harfi uchun she'r</h2>
+                        <p style="color: var(--text-muted); font-style: italic;" data-i18n="poem_alpha_u_subtitle">
+                            Alifbo she'rlari</p>
+                    </div>
+
+                    <div style="font-size: 1.05rem; line-height: 1.8; color: var(--text-color); text-align: center; font-family: 'Georgia', serif;"
+                        data-i18n="poem_alpha_u_body">
+                        Uchqur uchuvchi ukki<br>Uzoq-uzoqqa uchdi.<br>Uloqcha uchaman deb,<br>Uzala yerga tushdi.<br>U
+                        yon bu yon boqib soʻng,<br>Uf tortdi tushib choʻkka:<br>"Uchqur qanotim boʻlsa,<br>Uchardim men
+                        ham koʻkka".
+                    </div>
+
+                    <div
+                        style="margin-top: 2.5rem; text-align: center; border-top: 1px solid var(--glass-border); padding-top: 1.5rem;">
+                        <button class="btn btn-green like-btn" style="max-width: 200px;">
+                            <i class="far fa-thumbs-up"></i> <span data-i18n="liked_question">Yoqdimi?</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- Poem V -->
+                <div class="card"
+                    style="flex: 1; min-width: 350px; max-width: 550px; padding: 2.5rem; position: relative;">
+                    <div style="text-align: center; margin-bottom: 2rem;">
+                        <div
+                            style="font-size: 3.5rem; color: var(--primary-color); font-weight: bold; margin-bottom: 1rem; font-family: 'Georgia', serif; display: block;">
+                            V</div>
+                        <h2 style="color: var(--primary-color); font-size: 1.6rem; margin-bottom: 0.5rem;"
+                            data-i18n="poem_alpha_v_title">V harfi uchun she'r</h2>
+                        <p style="color: var(--text-muted); font-style: italic;" data-i18n="poem_alpha_v_subtitle">
+                            Alifbo she'rlari</p>
+                    </div>
+
+                    <div style="font-size: 1.05rem; line-height: 1.8; color: var(--text-color); text-align: center; font-family: 'Georgia', serif;"
+                        data-i18n="poem_alpha_v_body">
+                        Va'zxonlik qilar Toʻti:<br>"Vijdonli boʻlish kerak.<br>Va'da berdingmi, boʻldi,<br>Vaqtida
+                        qilish kerak!"<br>Toʻgri-yu, aytgan soʻzi,<br>Amal qilarmi oʻzi?
+                    </div>
+
+                    <div
+                        style="margin-top: 2.5rem; text-align: center; border-top: 1px solid var(--glass-border); padding-top: 1.5rem;">
+                        <button class="btn btn-green like-btn" style="max-width: 200px;">
+                            <i class="far fa-thumbs-up"></i> <span data-i18n="liked_question">Yoqdimi?</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- Poem X -->
+                <div class="card"
+                    style="flex: 1; min-width: 350px; max-width: 550px; padding: 2.5rem; position: relative;">
+                    <div style="text-align: center; margin-bottom: 2rem;">
+                        <div
+                            style="font-size: 3.5rem; color: var(--primary-color); font-weight: bold; margin-bottom: 1rem; font-family: 'Georgia', serif; display: block;">
+                            X</div>
+                        <h2 style="color: var(--primary-color); font-size: 1.6rem; margin-bottom: 0.5rem;"
+                            data-i18n="poem_alpha_x_title">X harfi uchun she'r</h2>
+                        <p style="color: var(--text-muted); font-style: italic;" data-i18n="poem_alpha_x_subtitle">
+                            Alifbo she'rlari</p>
+                    </div>
+
+                    <div style="font-size: 1.05rem; line-height: 1.8; color: var(--text-color); text-align: center; font-family: 'Georgia', serif;"
+                        data-i18n="poem_alpha_x_body">
+                        Xabarchi xoʻroz sahar<br>"Xushxabar!-- deb qichqirar.<br>- Xalos boʻldik zulmatdan,<br>Xatarli
+                        tun-kulfatdan.<br>Xursand boʻling, oshnalar,<br>Xayrli tong boshlanar!...<br>Xurrak otib
+                        yotmangiz,<br>Xo'p gʻaflatga botmangiz!"
+                    </div>
+
+                    <div
+                        style="margin-top: 2.5rem; text-align: center; border-top: 1px solid var(--glass-border); padding-top: 1.5rem;">
+                        <button class="btn btn-green like-btn" style="max-width: 200px;">
+                            <i class="far fa-thumbs-up"></i> <span data-i18n="liked_question">Yoqdimi?</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- Poem Y -->
+                <div class="card"
+                    style="flex: 1; min-width: 350px; max-width: 550px; padding: 2.5rem; position: relative;">
+                    <div style="text-align: center; margin-bottom: 2rem;">
+                        <div
+                            style="font-size: 3.5rem; color: var(--primary-color); font-weight: bold; margin-bottom: 1rem; font-family: 'Georgia', serif; display: block;">
+                            Y</div>
+                        <h2 style="color: var(--primary-color); font-size: 1.6rem; margin-bottom: 0.5rem;"
+                            data-i18n="poem_alpha_y_title">Y harfi uchun she'r</h2>
+                        <p style="color: var(--text-muted); font-style: italic;" data-i18n="poem_alpha_y_subtitle">
+                            Alifbo she'rlari</p>
+                    </div>
+
+                    <div style="font-size: 1.05rem; line-height: 1.8; color: var(--text-color); text-align: center; font-family: 'Georgia', serif;"
+                        data-i18n="poem_alpha_y_body">
+                        Yoʻl-yoʻl formali Yoʻlbars ‐---<br>Yoʻl nazorat xodimi.<br>Yurgan yoʻlovchilarning<br>Kuzatar
+                        har odimin<br>Yoʻlchiroqqa qaramay,<br>Tartib buzsa qay biri,<br>Yoʻlga solib, ayamay,<br>Berib
+                        qoʻyar tazirin
+                    </div>
+
+                    <div
+                        style="margin-top: 2.5rem; text-align: center; border-top: 1px solid var(--glass-border); padding-top: 1.5rem;">
+                        <button class="btn btn-green like-btn" style="max-width: 200px;">
+                            <i class="far fa-thumbs-up"></i> <span data-i18n="liked_question">Yoqdimi?</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- Poem Z -->
+                <div class="card"
+                    style="flex: 1; min-width: 350px; max-width: 550px; padding: 2.5rem; position: relative;">
+                    <div style="text-align: center; margin-bottom: 2rem;">
+                        <div
+                            style="font-size: 3.5rem; color: var(--primary-color); font-weight: bold; margin-bottom: 1rem; font-family: 'Georgia', serif; display: block;">
+                            Z</div>
+                        <h2 style="color: var(--primary-color); font-size: 1.6rem; margin-bottom: 0.5rem;"
+                            data-i18n="poem_alpha_z_title">Z harfi uchun she'r</h2>
+                        <p style="color: var(--text-muted); font-style: italic;" data-i18n="poem_alpha_z_subtitle">
+                            Alifbo she'rlari</p>
+                    </div>
+
+                    <div style="font-size: 1.05rem; line-height: 1.8; color: var(--text-color); text-align: center; font-family: 'Georgia', serif;"
+                        data-i18n="poem_alpha_z_body">
+                        Zargʻaldoq zargar ekan,<br>Ziragi gavhar ekan,<br>Ziyrak turib doimo<br>Zarlarin asrar ekan.
+                    </div>
+
+                    <div
+                        style="margin-top: 2.5rem; text-align: center; border-top: 1px solid var(--glass-border); padding-top: 1.5rem;">
+                        <button class="btn btn-green like-btn" style="max-width: 200px;">
+                            <i class="far fa-thumbs-up"></i> <span data-i18n="liked_question">Yoqdimi?</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- Poem O' -->
+                <div class="card"
+                    style="flex: 1; min-width: 350px; max-width: 550px; padding: 2.5rem; position: relative;">
+                    <div style="text-align: center; margin-bottom: 2rem;">
+                        <div
+                            style="font-size: 3.5rem; color: var(--primary-color); font-weight: bold; margin-bottom: 1rem; font-family: 'Georgia', serif; display: block;">
+                            Oʻ</div>
+                        <h2 style="color: var(--primary-color); font-size: 1.6rem; margin-bottom: 0.5rem;"
+                            data-i18n="poem_alpha_o_v_title">Oʻ harfi uchun she'r</h2>
+                        <p style="color: var(--text-muted); font-style: italic;" data-i18n="poem_alpha_o_v_subtitle">
+                            Alifbo she'rlari</p>
+                    </div>
+
+                    <div style="font-size: 1.05rem; line-height: 1.8; color: var(--text-color); text-align: center; font-family: 'Georgia', serif;"
+                        data-i18n="poem_alpha_o_v_body">
+                        Oʻqituvchi oʻrdakning<br>Oʻtgan darsini har kun<br>Oʻzlashtirib, oʻrganar<br>Oʻquvchi
+                        oʻrdakchalar.<br>Oʻzlari yosh boʻlsa ham.<br>Oʻtkir zehnli biram.<br>Oʻylab topishar
+                        darhol,<br>Oʻnta boʻlsa ham savol.
+                    </div>
+
+                    <div
+                        style="margin-top: 2.5rem; text-align: center; border-top: 1px solid var(--glass-border); padding-top: 1.5rem;">
+                        <button class="btn btn-green like-btn" style="max-width: 200px;">
+                            <i class="far fa-thumbs-up"></i> <span data-i18n="liked_question">Yoqdimi?</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- Poem G' -->
+                <div class="card"
+                    style="flex: 1; min-width: 350px; max-width: 550px; padding: 2.5rem; position: relative;">
+                    <div style="text-align: center; margin-bottom: 2rem;">
+                        <div
+                            style="font-size: 3.5rem; color: var(--primary-color); font-weight: bold; margin-bottom: 1rem; font-family: 'Georgia', serif; display: block;">
+                            Gʻ</div>
+                        <h2 style="color: var(--primary-color); font-size: 1.6rem; margin-bottom: 0.5rem;"
+                            data-i18n="poem_alpha_g_v_title">Gʻ harfi uchun she'r</h2>
+                        <p style="color: var(--text-muted); font-style: italic;" data-i18n="poem_alpha_g_v_subtitle">
+                            Alifbo she'rlari</p>
+                    </div>
+
+                    <div style="font-size: 1.05rem; line-height: 1.8; color: var(--text-color); text-align: center; font-family: 'Georgia', serif;"
+                        data-i18n="poem_alpha_g_v_body">
+                        Gʻazalxon Gʻoz sahnada<br>Qoʻshiq aytar "gʻoq-gʻoq" deb.<br>Kekkaymang davralarda,<br>Kamtar
+                        boʻling, oʻrtoq, deb<br>Qoʻshigʻiku ma'noli,<br>Gʻalati oʻzi biroq.<br>Gʻoddayishini
+                        tashlasa,<br>Boʻlarmidi yaxshiroq.
+                    </div>
+
+                    <div
+                        style="margin-top: 2.5rem; text-align: center; border-top: 1px solid var(--glass-border); padding-top: 1.5rem;">
+                        <button class="btn btn-green like-btn" style="max-width: 200px;">
+                            <i class="far fa-thumbs-up"></i> <span data-i18n="liked_question">Yoqdimi?</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- Poem Sh -->
+                <div class="card"
+                    style="flex: 1; min-width: 350px; max-width: 550px; padding: 2.5rem; position: relative;">
+                    <div style="text-align: center; margin-bottom: 2rem;">
+                        <div
+                            style="font-size: 3.5rem; color: var(--primary-color); font-weight: bold; margin-bottom: 1rem; font-family: 'Georgia', serif; display: block;">
+                            Sh</div>
+                        <h2 style="color: var(--primary-color); font-size: 1.6rem; margin-bottom: 0.5rem;"
+                            data-i18n="poem_alpha_sh_title">Sh harfi uchun she'r</h2>
+                        <p style="color: var(--text-muted); font-style: italic;" data-i18n="poem_alpha_sh_subtitle">
+                            Alifbo she'rlari</p>
+                    </div>
+
+                    <div style="font-size: 1.05rem; line-height: 1.8; color: var(--text-color); text-align: center; font-family: 'Georgia', serif;"
+                        data-i18n="poem_alpha_sh_body">
+                        Shifokor she'r oldiga<br>Shum tulki shoshib keldi.<br>"Voy boshim", deb yolgʻondan<br>Maktabdan
+                        qochib keldi.<br>Sher tekshirdi-yu shartta,<br>Dedi: "Sogʻsan, darsga bor!"<br>Shumshayib qaytdi
+                        ortga,<br>Sharmanda boʻlib ayyor.
+                    </div>
+
+                    <div
+                        style="margin-top: 2.5rem; text-align: center; border-top: 1px solid var(--glass-border); padding-top: 1.5rem;">
+                        <button class="btn btn-green like-btn" style="max-width: 200px;">
+                            <i class="far fa-thumbs-up"></i> <span data-i18n="liked_question">Yoqdimi?</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- Poem Ch -->
+                <div class="card"
+                    style="flex: 1; min-width: 350px; max-width: 550px; padding: 2.5rem; position: relative;">
+                    <div style="text-align: center; margin-bottom: 2rem;">
+                        <div
+                            style="font-size: 3.5rem; color: var(--primary-color); font-weight: bold; margin-bottom: 1rem; font-family: 'Georgia', serif; display: block;">
+                            Ch</div>
+                        <h2 style="color: var(--primary-color); font-size: 1.6rem; margin-bottom: 0.5rem;"
+                            data-i18n="poem_alpha_ch_title">Ch harfi uchun she'r</h2>
+                        <p style="color: var(--text-muted); font-style: italic;" data-i18n="poem_alpha_ch_subtitle">
+                            Alifbo she'rlari</p>
+                    </div>
+
+                    <div style="font-size: 1.05rem; line-height: 1.8; color: var(--text-color); text-align: center; font-family: 'Georgia', serif;"
+                        data-i18n="poem_alpha_ch_body">
+                        Chigirtka zo'r cholg'uchi<br>Chalar kuy charchamasdan<br>Chiridoqlar jo'r bo'lib<br>Chirillar
+                        har tarafdan<br>Chir aylanib o'ynaydi<br>Chiroyli kapalaklar,<br>Chapak chalib
+                        quvnaydi<br>Chamandagi chechaklar
+                    </div>
+
+                    <div
+                        style="margin-top: 2.5rem; text-align: center; border-top: 1px solid var(--glass-border); padding-top: 1.5rem;">
+                        <button class="btn btn-green like-btn" style="max-width: 200px;">
+                            <i class="far fa-thumbs-up"></i> <span data-i18n="liked_question">Yoqdimi?</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- Poem Ng -->
+                <div class="card"
+                    style="flex: 1; min-width: 350px; max-width: 550px; padding: 2.5rem; position: relative;">
+                    <div style="text-align: center; margin-bottom: 2rem;">
+                        <div
+                            style="font-size: 3.5rem; color: var(--primary-color); font-weight: bold; margin-bottom: 1rem; font-family: 'Georgia', serif; display: block;">
+                            Ng</div>
+                        <h2 style="color: var(--primary-color); font-size: 1.6rem; margin-bottom: 0.5rem;"
+                            data-i18n="poem_alpha_ng_title">Ng harfi uchun she'r</h2>
+                        <p style="color: var(--text-muted); font-style: italic;" data-i18n="poem_alpha_ng_subtitle">
+                            Alifbo she'rlari</p>
+                    </div>
+
+                    <div style="font-size: 1.05rem; line-height: 1.8; color: var(--text-color); text-align: center; font-family: 'Georgia', serif;"
+                        data-i18n="poem_alpha_ng_body">
+                        Tayyorga ayyor nahang<br>Tekinxo'r takasaltang<br>Qarmoqdagi o'ljaga<br>Og'iz solgandi
+                        qarang<br>Tumshug'idan ilinib<br>Tipirchilar, holi tang.
+                    </div>
+
+                    <div
+                        style="margin-top: 2.5rem; text-align: center; border-top: 1px solid var(--glass-border); padding-top: 1.5rem;">
+                        <button class="btn btn-green like-btn" style="max-width: 200px;">
+                            <i class="far fa-thumbs-up"></i> <span data-i18n="liked_question">Yoqdimi?</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Global Back Button -->
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="index.html" class="btn"
+                    style="max-width: 200px; background: rgba(255,255,255,0.05); border: 1px solid var(--glass-border); color: var(--text-muted);">
+                    <i class="fas fa-home"></i> <span data-i18n="back_home">Back to Home</span>
+                </a>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+    <script>
+        document.querySelectorAll('.like-btn').forEach(btn => {
+            btn.addEventListener('click', function () {
+                const icon = this.querySelector('i');
+                const span = this.querySelector('span');
+
+                if (icon.classList.contains('far')) {
+                    icon.classList.replace('far', 'fas');
+                    span.setAttribute('data-i18n', 'liked_answer');
+                    if (typeof updateLanguage === 'function' && window.currentLang) {
+                        updateLanguage(window.currentLang);
+                    } else {
+                        span.textContent = 'Yoqdi!';
+                    }
+                    this.style.transform = 'scale(1.1)';
+                    setTimeout(() => this.style.transform = 'scale(1)', 200);
+                } else {
+                    icon.classList.replace('fas', 'far');
+                    span.setAttribute('data-i18n', 'liked_question');
+                    if (typeof updateLanguage === 'function' && window.currentLang) {
+                        updateLanguage(window.currentLang);
+                    } else {
+                        span.textContent = 'Yoqdimi?';
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduPlay - Help Center</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+            <nav class="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <i class="fas fa-gamepad"></i>
+                <span>EduPlay</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="main.html"><i class="fas fa-star"></i> <span data-i18n="start_page">Welcome</span></a></li>
+                <li class="nav-section"><span data-i18n="games">Games</span></li>
+                <li><a href="index.html"><i class="fas fa-gamepad"></i> <span data-i18n="games">Games</span></a></li>
+                <li><a href="certificate.html"><i class="fas fa-certificate"></i> <span data-i18n="get_certificate">Get Certificate</span></a></li>
+                <li class="nav-section"><span data-i18n="login">Login</span></li>
+                <li><a href="login.html"><i class="fas fa-sign-in-alt"></i> <span data-i18n="login">Login</span></a></li>
+                <li class="nav-section"><span data-i18n="more">More</span></li>
+                <li><a href="poems.html"><i class="fas fa-feather-alt"></i> <span data-i18n="poems">Poems</span></a></li>
+                <li class="nav-section"><span data-i18n="settings">Settings</span></li>
+                <li><a href="settings.html"><i class="fas fa-cog"></i> <span data-i18n="settings">Settings</span></a></li>
+                <li><a href="help.html" class="active"><i class="fas fa-question-circle"></i> <span data-i18n="help">Help</span></a></li>
+                <li><a href="videos.html"><i class="fas fa-bookmark"></i> <span data-i18n="videos">Saved Videos</span></a></li>
+            </ul>
+        </div>
+        <div class="sidebar-footer">
+            <div class="language-switcher">
+                <select id="lang-select"
+                    style="width: 100%; padding: 0.5rem; background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.1); color: white; border-radius: 0.5rem;">
+                    <option value="uz">O'zbekcha</option>
+                    <option value="en" selected>English</option>
+                    <option value="ru">Русский</option>
+                </select>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <header>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="page-title">
+                <h1 data-i18n="help_header">Help Center</h1>
+            </div>
+        </header>
+
+        <div class="help-container">
+            <!-- About Section -->
+            <section class="help-section">
+                <h2><i class="fas fa-info-circle"></i> <span data-i18n="help_about_title">Bu sayt nima qila
+                        oladi?</span></h2>
+                <div class="help-card">
+                    <p data-i18n="help_about_p1">Ushbu veb-sayt maktabgacha bo‘lgan ta’lim muassasalari faoliyatini
+                        qo‘llab-quvvatlash hamda bolalar ta’lim-tarbiyasini zamonaviy axborot texnologiyalari orqali
+                        yanada samarali tashkil etish maqsadida ishlab chiqilgan.</p>
+                    <br>
+                    <p data-i18n="help_about_p2">Platformada bolalar uchun mo‘ljallangan turli xil rivojlantiruvchi,
+                        ta’limiy va qiziqarli o‘yinlar jamlangan bo‘lib, ular orqali bolalarning bilim darajasi,
+                        mantiqiy fikrlashi hamda faolligini oshirishga xizmat qiladi. Shuningdek, sayt orqali
+                        bolalarning o‘yin jarayonida ishtiroki va topshiriqlarni bajarish holatini kuzatish imkoniyati
+                        mavjud.</p>
+                    <br>
+                    <p data-i18n="help_about_p3">Mazkur veb-sayt pedagoglar va tarbiyachilar uchun ta’lim jarayonini
+                        nazorat qilish va tahlil etishda, ota-onalar uchun esa farzandlarining rivojlanish jarayonini
+                        kuzatishda qulay va samarali vosita hisoblanadi.</p>
+                </div>
+            </section>
+
+            <!-- Support Contacts -->
+            <section class="help-section">
+                <h2><i class="fas fa-headset"></i> <span data-i18n="help_contact_title">Bog'lanish</span></h2>
+                <div class="contact-grid">
+                    <!-- Technical Support -->
+                    <a href="https://t.me/IsomiddinFakhriddinov" target="_blank" class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h3 data-i18n="help_tech_title">Texnik masalalar</h3>
+                            <p data-i18n="help_tech_desc">Nosozliklar va xatoliklar bo‘yicha</p>
+                            <span class="contact-link">@IsomiddinFakhriddinov</span>
+                        </div>
+                    </a>
+
+                    <!-- Game Suggestions -->
+                    <a href="https://t.me/Azimovna_003" target="_blank" class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h3 data-i18n="help_game_title">Video o‘yinlar bo'yicha</h3>
+                            <p data-i18n="help_game_desc">Takliflar va o'yin funksiyalari</p>
+                            <span class="contact-link">@Azimovna_003</span>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Footer Note -->
+            <div class="help-footer">
+                <h3 data-i18n="help_footer_text">Barcha murojaatlar imkon qadar tezkor tarzda ko‘rib chiqilib,
+                    muammolarni bartaraf etish hamda veb-sayt faoliyatini yanada takomillashtirish choralari ko‘riladi.
+                </h3>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

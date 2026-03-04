@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduPlay - Video Lessons</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+            <nav class="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <i class="fas fa-gamepad"></i>
+                <span>EduPlay</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="main.html"><i class="fas fa-star"></i> <span data-i18n="start_page">Welcome</span></a></li>
+                <li class="nav-section"><span data-i18n="games">Games</span></li>
+                <li><a href="index.html"><i class="fas fa-gamepad"></i> <span data-i18n="games">Games</span></a></li>
+                <li><a href="certificate.html"><i class="fas fa-certificate"></i> <span data-i18n="get_certificate">Get Certificate</span></a></li>
+                <li class="nav-section"><span data-i18n="login">Login</span></li>
+                <li><a href="login.html"><i class="fas fa-sign-in-alt"></i> <span data-i18n="login">Login</span></a></li>
+                <li class="nav-section"><span data-i18n="more">More</span></li>
+                <li><a href="poems.html"><i class="fas fa-feather-alt"></i> <span data-i18n="poems">Poems</span></a></li>
+                <li class="nav-section"><span data-i18n="settings">Settings</span></li>
+                <li><a href="settings.html"><i class="fas fa-cog"></i> <span data-i18n="settings">Settings</span></a></li>
+                <li><a href="help.html"><i class="fas fa-question-circle"></i> <span data-i18n="help">Help</span></a></li>
+                <li><a href="videos.html"><i class="fas fa-bookmark"></i> <span data-i18n="videos">Saved Videos</span></a></li>
+            </ul>
+        </div>
+        <div class="sidebar-footer">
+            <div class="language-switcher">
+                <select id="lang-select"
+                    style="width: 100%; padding: 0.5rem; background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.1); color: white; border-radius: 0.5rem;">
+                    <option value="uz">O'zbekcha</option>
+                    <option value="en" selected>English</option>
+                    <option value="ru">Русский</option>
+                </select>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <header>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="page-title">
+                <h1 data-i18n="video_lessons">Video Lessons</h1>
+            </div>
+        </header>
+
+        <section class="video-grid">
+            <!-- Lesson 1: Alphabet -->
+            <div class="video-card">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/HQ_7_cQYc4o" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title">Lesson 1: The ABC Song</div>
+                    <div class="video-desc">Classic alphabet song for preschoolers to learn their letters.</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('The ABC Song', 'Classic alphabet song for preschoolers.', 'https://www.youtube.com/embed/HQ_7_cQYc4o', 'https://img.youtube.com/vi/HQ_7_cQYc4o/0.jpg')">
+                        <i class="fas fa-bookmark"></i> Save to Library
+                    </button>
+                </div>
+            </div>
+
+            <!-- Lesson 2: Colors -->
+            <div class="video-card">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/T65Z6AkvU4w" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title">Lesson 2: The Colors Song</div>
+                    <div class="video-desc">Fun way to learn and identify different colors.</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('The Colors Song', 'Learn and identify colors.', 'https://www.youtube.com/embed/T65Z6AkvU4w', 'https://img.youtube.com/vi/T65Z6AkvU4w/0.jpg')">
+                        <i class="fas fa-bookmark"></i> Save to Library
+                    </button>
+                </div>
+            </div>
+
+            <!-- Lesson 3: Animals -->
+            <div class="video-card">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/5oYKonuEtsE" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title">Lesson 3: Animal Sounds Song</div>
+                    <div class="video-desc">Learn about different animals and the sounds they make.</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Animal Sounds Song', 'Learn animal sounds.', 'https://www.youtube.com/embed/5oYKonuEtsE', 'https://img.youtube.com/vi/5oYKonuEtsE/0.jpg')">
+                        <i class="fas fa-bookmark"></i> Save to Library
+                    </button>
+                </div>
+            </div>
+
+            <!-- Lesson 4: Emotions -->
+            <div class="video-card">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/l4WNrvVjiTw" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title">Lesson 4: How Are You Feeling?</div>
+                    <div class="video-desc">Helping children understand and express their emotions.</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('How Are You Feeling?', 'Learn about emotions.', 'https://www.youtube.com/embed/l4WNrvVjiTw', 'https://img.youtube.com/vi/l4WNrvVjiTw/0.jpg')">
+                        <i class="fas fa-bookmark"></i> Save to Library
+                    </button>
+                </div>
+            </div>
+
+            <!-- Lesson 5: Hygiene -->
+            <div class="video-card">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/yQS29S-I07c" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title">Lesson 5: Brush Your Teeth</div>
+                    <div class="video-desc">Fun song to teach children about dental hygiene.</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Brush Your Teeth', 'Dental hygiene song.', 'https://www.youtube.com/embed/yQS29S-I07c', 'https://img.youtube.com/vi/yQS29S-I07c/0.jpg')">
+                        <i class="fas fa-bookmark"></i> Save to Library
+                    </button>
+                </div>
+            </div>
+
+            <!-- Lesson 6: Weather -->
+            <div class="video-card">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/I8GeA3anPdo" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title">Lesson 6: How's The Weather?</div>
+                    <div class="video-desc">Learn about sunny, rainy, cloudy, and snowy days.</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('How\'s The Weather?', 'Learn about weather conditions.', 'https://www.youtube.com/embed/I8GeA3anPdo', 'https://img.youtube.com/vi/I8GeA3anPdo/0.jpg')">
+                        <i class="fas fa-bookmark"></i> Save to Library
+                    </button>
+                </div>
+            </div>
+
+            <!-- Lesson 7: Body Parts -->
+            <div class="video-card">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/Z6mH_V0jshA" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title">Lesson 7: Head, Shoulders, Knees and Toes</div>
+                    <div class="video-desc">Interactive song to learn about parts of the body.</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Head, Shoulders, Knees and Toes', 'Body parts song.', 'https://www.youtube.com/embed/Z6mH_V0jshA', 'https://img.youtube.com/vi/Z6mH_V0jshA/0.jpg')">
+                        <i class="fas fa-bookmark"></i> Save to Library
+                    </button>
+                </div>
+            </div>
+
+            <!-- Lesson 8: Fruits -->
+            <div class="video-card">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/qreH3P6itw4" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title">Lesson 8: The Fruit Song</div>
+                    <div class="video-desc">Learn the names of different fruits and healthy eating.</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('The Fruit Song', 'Learn fruit names.', 'https://www.youtube.com/embed/qreH3P6itw4', 'https://img.youtube.com/vi/qreH3P6itw4/0.jpg')">
+                        <i class="fas fa-bookmark"></i> Save to Library
+                    </button>
+                </div>
+            </div>
+
+            <!-- Lesson 9: Vehicles -->
+            <div class="video-card">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/Gjk_dG_c2I4" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title">Lesson 9: Wheels on the Bus</div>
+                    <div class="video-desc">Classic song about public transportation and vehicles.</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Wheels on the Bus', 'Classic vehicle song.', 'https://www.youtube.com/embed/Gjk_dG_c2I4', 'https://img.youtube.com/vi/Gjk_dG_c2I4/0.jpg')">
+                        <i class="fas fa-bookmark"></i> Save to Library
+                    </button>
+                </div>
+            </div>
+
+            <!-- Lesson 10: Family -->
+            <div class="video-card">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/YJyNoFkud6g" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title">Lesson 10: Finger Family Song</div>
+                    <div class="video-desc">Learn about family members in this fun nursery rhyme.</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Finger Family Song', 'Learn about family members.', 'https://www.youtube.com/embed/YJyNoFkud6g', 'https://img.youtube.com/vi/YJyNoFkud6g/0.jpg')">
+                        <i class="fas fa-bookmark"></i> Save to Library
+                    </button>
+                </div>
+            </div>
+
+            <!-- Lesson 11: Days of the Week -->
+            <div class="video-card">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/mXMofxtDPUQ" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title">Lesson 11: Days of the Week Song</div>
+                    <div class="video-desc">Learn the names of the seven days of the week.</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Days of the Week Song', 'Learn days of the week.', 'https://www.youtube.com/embed/mXMofxtDPUQ', 'https://img.youtube.com/vi/mXMofxtDPUQ/0.jpg')">
+                        <i class="fas fa-bookmark"></i> Save to Library
+                    </button>
+                </div>
+            </div>
+
+            <!-- Lesson 12: Months of the Year -->
+            <div class="video-card">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/Fe9bnYRzFvk" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title">Lesson 12: Months of the Year</div>
+                    <div class="video-desc">A fun way for children to learn all twelve months.</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Months of the Year', 'Learn months of the year.', 'https://www.youtube.com/embed/Fe9bnYRzFvk', 'https://img.youtube.com/vi/Fe9bnYRzFvk/0.jpg')">
+                        <i class="fas fa-bookmark"></i> Save to Library
+                    </button>
+                </div>
+            </div>
+
+            <!-- Lesson 13: Solar System -->
+            <div class="video-card">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/mQrlgH97v94" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title">Lesson 13: The Planets Song</div>
+                    <div class="video-desc">Introduction to the planets in our solar system.</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('The Planets Song', 'Solar system introduction.', 'https://www.youtube.com/embed/mQrlgH97v94', 'https://img.youtube.com/vi/mQrlgH97v94/0.jpg')">
+                        <i class="fas fa-bookmark"></i> Save to Library
+                    </button>
+                </div>
+            </div>
+
+            <!-- Lesson 14: Politeness -->
+            <div class="video-card">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/rKshzOfNQuM" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title">Lesson 14: Magic Words</div>
+                    <div class="video-desc">Learn about being polite and using "please" and "thank you".</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Magic Words', 'Social skills and manners.', 'https://www.youtube.com/embed/rKshzOfNQuM', 'https://img.youtube.com/vi/rKshzOfNQuM/0.jpg')">
+                        <i class="fas fa-bookmark"></i> Save to Library
+                    </button>
+                </div>
+            </div>
+
+            <!-- Lesson 15: Bedtime Routine -->
+            <div class="video-card">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/39908F879-c" frameborder="0" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title">Lesson 15: Bedtime Routine Song</div>
+                    <div class="video-desc">Establishing a healthy evening routine for better sleep.</div>
+                    <button class="save-btn"
+                        onclick="saveVideo('Bedtime Routine Song', 'Healthy bedtime habits.', 'https://www.youtube.com/embed/39908F879-c', 'https://img.youtube.com/vi/39908F879-c/0.jpg')">
+                        <i class="fas fa-bookmark"></i> Save to Library
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

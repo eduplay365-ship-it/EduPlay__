@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sertifikat olish - EduPlay</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+            <nav class="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <i class="fas fa-gamepad"></i>
+                <span>EduPlay</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="main.html"><i class="fas fa-star"></i> <span data-i18n="start_page">Welcome</span></a></li>
+                <li class="nav-section"><span data-i18n="games">Games</span></li>
+                <li><a href="index.html"><i class="fas fa-gamepad"></i> <span data-i18n="games">Games</span></a></li>
+                <li><a href="certificate.html" class="active"><i class="fas fa-certificate"></i> <span data-i18n="get_certificate">Get Certificate</span></a></li>
+                <li class="nav-section"><span data-i18n="login">Login</span></li>
+                <li><a href="login.html"><i class="fas fa-sign-in-alt"></i> <span data-i18n="login">Login</span></a></li>
+                <li class="nav-section"><span data-i18n="more">More</span></li>
+                <li><a href="poems.html"><i class="fas fa-feather-alt"></i> <span data-i18n="poems">Poems</span></a></li>
+                <li class="nav-section"><span data-i18n="settings">Settings</span></li>
+                <li><a href="settings.html"><i class="fas fa-cog"></i> <span data-i18n="settings">Settings</span></a></li>
+                <li><a href="help.html"><i class="fas fa-question-circle"></i> <span data-i18n="help">Help</span></a></li>
+                <li><a href="videos.html"><i class="fas fa-bookmark"></i> <span data-i18n="videos">Saved Videos</span></a></li>
+            </ul>
+        </div>
+        <div class="sidebar-footer">
+            <div class="language-switcher">
+                <select id="lang-select"
+                    style="width: 100%; padding: 0.5rem; background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.1); color: white; border-radius: 0.5rem;">
+                    <option value="uz">O'zbekcha</option>
+                    <option value="en" selected>English</option>
+                    <option value="ru">Русский</option>
+                </select>
+            </div>
+        </div>
+    </nav>
+    <main class="main-content">
+        <header>
+            <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+            <div class="page-title">
+                <h1 data-i18n="get_certificate">Get Certificate</h1>
+            </div>
+        </header>
+        <section class="content-section">
+            <div class="card" style="text-align: center; padding: 3rem; max-width: 800px; margin: 0 auto;">
+                <div class="card-icon" style="font-size: 4rem; margin-bottom: 2.5rem;">
+                    <i class="fas fa-award"></i>
+                </div>
+                <h2 data-i18n="cert_req_title" style="margin-bottom: 2rem; color: var(--primary-color);">Requirements to
+                    obtain a certificate:</h2>
+                <div
+                    style="background: rgba(255, 255, 255, 0.05); padding: 2.5rem; border-radius: 1.5rem; border: 1px dashed var(--glass-border); margin-bottom: 3rem;">
+                    <p data-i18n="cert_req_desc" style="font-size: 1.2rem; line-height: 1.8; color: var(--text-color);">
+                        To obtain a certificate, you must complete all 50 test questions. Each test result will be
+                        evaluated, and a final certificate will be issued.
+                    </p>
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 1.5rem; max-width: 400px; margin: 0 auto;">
+                    <a href="test.html" class="btn btn-green"
+                        style="font-size: 1.3rem; padding: 1.2rem; display: flex; align-items: center; justify-content: center; gap: 1rem;"
+                        data-i18n="start_test_btn">
+                        <i class="fas fa-play-circle"></i> Start Test
+                    </a>
+                    <a href="index.html" class="btn"
+                        style="background: rgba(255, 255, 255, 0.05); border: 1px solid var(--glass-border); color: var(--text-muted); font-size: 0.9rem;"
+                        data-i18n="back_home">Back to Home</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

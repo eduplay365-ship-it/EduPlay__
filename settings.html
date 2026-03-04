@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduPlay - Settings</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+            <nav class="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <i class="fas fa-gamepad"></i>
+                <span>EduPlay</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="main.html"><i class="fas fa-star"></i> <span data-i18n="start_page">Welcome</span></a></li>
+                <li class="nav-section"><span data-i18n="games">Games</span></li>
+                <li><a href="index.html"><i class="fas fa-gamepad"></i> <span data-i18n="games">Games</span></a></li>
+                <li><a href="certificate.html"><i class="fas fa-certificate"></i> <span data-i18n="get_certificate">Get Certificate</span></a></li>
+                <li class="nav-section"><span data-i18n="login">Login</span></li>
+                <li><a href="login.html"><i class="fas fa-sign-in-alt"></i> <span data-i18n="login">Login</span></a></li>
+                <li class="nav-section"><span data-i18n="more">More</span></li>
+                <li><a href="poems.html"><i class="fas fa-feather-alt"></i> <span data-i18n="poems">Poems</span></a></li>
+                <li class="nav-section"><span data-i18n="settings">Settings</span></li>
+                <li><a href="settings.html" class="active"><i class="fas fa-cog"></i> <span data-i18n="settings">Settings</span></a></li>
+                <li><a href="help.html"><i class="fas fa-question-circle"></i> <span data-i18n="help">Help</span></a></li>
+                <li><a href="videos.html"><i class="fas fa-bookmark"></i> <span data-i18n="videos">Saved Videos</span></a></li>
+            </ul>
+        </div>
+        <div class="sidebar-footer">
+            <div class="language-switcher">
+                <select id="lang-select"
+                    style="width: 100%; padding: 0.5rem; background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.1); color: white; border-radius: 0.5rem;">
+                    <option value="uz">O'zbekcha</option>
+                    <option value="en" selected>English</option>
+                    <option value="ru">Русский</option>
+                </select>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <header>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="page-title">
+                <h1 data-i18n="settings_header">Settings</h1>
+            </div>
+        </header>
+        <div class="settings-container">
+            <div class="settings-card">
+                <div class="setting-item">
+                    <div class="setting-info">
+                        <h3 data-i18n="theme_title">Theme</h3>
+                        <p data-i18n="theme_desc">Switch between dark and light mode</p>
+                    </div>
+                    <label class="switch">
+                        <input type="checkbox" id="theme-toggle">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="settings-card">
+                <div class="setting-item">
+                    <div class="setting-info">
+                        <h3 data-i18n="text_size_title">Text Size</h3>
+                        <p data-i18n="text_size_desc">Adjust the size of text on the screen</p>
+                    </div>
+                    <div class="range-control">
+                        <span id="text-size-value">100%</span>
+                        <input type="range" id="text-size-slider" min="80" max="150" value="100">
+                    </div>
+                </div>
+            </div>
+
+            <div class="settings-card">
+                <div class="setting-item">
+                    <div class="setting-info">
+                        <h3 data-i18n="sidebar_color_title">Sidebar Color</h3>
+                        <p data-i18n="sidebar_color_desc">Customize the sidebar background color</p>
+                    </div>
+                    <div class="color-control">
+                        <input type="color" id="sidebar-color-picker" value="#0f172a">
+                    </div>
+                </div>
+            </div>
+
+            <div class="settings-card">
+                <button class="reset-btn" id="reset-settings" onclick="resetSettings()">
+                    <i class="fas fa-undo"></i>
+                    <span data-i18n="reset_settings_btn">Reset to Default</span>
+                </button>
+            </div>
+
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
